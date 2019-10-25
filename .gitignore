@@ -1,0 +1,9 @@
+# ignore template folder
+latex-template
+
+# ignore build files
+*.aux
+*.log
+*.out
+*.toc
+
