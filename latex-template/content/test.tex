@@ -1,0 +1,75 @@
+\documentclass[12pt, titlepage]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{float}
+
+% fancy quotes
+\usepackage{epigraph}
+
+\graphicspath{ {./} }
+
+\title{Wochen Journal KW36}
+\date{03-09-2018}
+\author{Donato Wolfisberg}
+
+\begin{document}
+  \pagenumbering{gobble}
+  \maketitle
+
+  \pagenumbering{Roman}
+  \tableofcontents
+  \newpage
+
+  \pagenumbering{arabic}
+
+  \section{Montag}
+    Ich nahm mich heute Morgen mit neuer Energie dem Fehler beim E2E Test im
+Siebel an. Ich konnte nun auch den einten Fehler lösen der mich den
+ganzen Freitagnachmittag aufgehalten hatte. Nun nahm ich mich dem Problem
+an, dass Random etwa bei jedem 5ten mal Auftritt. Dies wäre das bei der
+Address Mutation den Search quarry in das Datum Feld geschrieben wird.
+Zuerst wollte ich es schön lösen und ging in den source code von dieser Komponente
+um zu schauen was bei der Initialisierung alles passiert. Leider konnte ich
+dort nichts Finden daher schaute ich, ob es noch einen anderen Weg gibt.
+Daraufhin fand Ich raus, dass ein "browser.sleep(800)" bevor dem einfüllen.
+Die Chancen vom Auftreten dieses Fehlers sehr vermindern. Ich konnte
+heute die zwei neuen Tests fertigstellen.
+
+  \section{Dienstag}
+  Am Morgen hatte ich mit Dominik und Reto ein Meeting, über das Lehr\-lingsprojekt
+"KuBe Mailing". Dort kam raus, dass man zuerst noch mehr Abklärungen mit
+der Architektur machen muss. Da ich am Nachmittag gerade nichts zum Machen
+gehabt habe machte ich das Projekt für das Automatische eintragen von
+Berufsschultagen im "myHR". Ich wollte es mit Protractor machen aber nicht mit
+einem Testing Framework. Dies war ein Problem, weil man bei Protractor
+ein Framework angeben muss. Mann kann aber auch ein custom Framework angeben.
+Daher musste ich zuerst herausfinden, wie ich ein eigenes minimal testing Framework
+erstellen kann. Wäre es besser dokumentiert gewesen wäre dies keine Grosse Aufgabe gewesen.
+Ich konnte den code nach längerem suchen recht klein halten wie man im Bild \ref{fig:framework-code}
+sieht.
+
+  \begin{figure}[H]
+      \includegraphics[width=\textwidth]{framework-code}
+      \caption{Framework Code}
+      \label{fig:framework-code}
+  \end{figure}
+
+  \section{Freitag}
+  Ich musste heute zuerst noch die Dokumentation vom Dienstag nach schreiben.
+Dann habe ich das Tool für das automatische eintragen bei mir ausgeführt.
+Es sieht so aus, wie es funktionieren würde. Meine Berufsschultage sind
+jetzt bis zu 15.05.2019 eingetragen. Als ich Reto fragen ging, was ich als
+Nächstes machen sollte, sagte er mir ich das ich ein PowerShell Script
+für das KuBe Mailing erstellen soll. Ich fand dies eher Schwer, um wider rein zu kommen. Weil ich bis jetzt nur in einem Modul
+ein wenig PowerShell gemacht habe. Leider war auch dieses wissen
+schon wieder verflogen. Nach vielen Google suchen konnte ich das Script
+doch noch fertigstellen.
+
+  \epigraph{Why ain't there no default python and node.js on windows}
+  {\textit{Donato Wolfisberg \\ donato.wolfisberg@gmail.com}}
+
+
+\end{document}

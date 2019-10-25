@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WJ-2019/KW42/KW42.iml" filepath="$PROJECT_DIR$/WJ-2019/KW42/KW42.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WJ-2019/KW43/KW43.iml" filepath="$PROJECT_DIR$/WJ-2019/KW43/KW43.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WJ-2019/WJ-2019.iml" filepath="$PROJECT_DIR$/WJ-2019/WJ-2019.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Weekly-Journal.iml" filepath="$PROJECT_DIR$/Weekly-Journal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/latex-template/latex-template.iml" filepath="$PROJECT_DIR$/latex-template/latex-template.iml" />
+    </modules>
+  </component>
+</project>
